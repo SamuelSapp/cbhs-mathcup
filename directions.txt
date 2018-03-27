@@ -1,0 +1,147 @@
+Instructions:
+
+To edit the board's details, edit the data.txt file and save it in the program's Resources directory.
+
+To reach the Resources directory, right-click or ctrl+left-click on the program and select "Show Package Details". Once it opens, open the "Contents" folder, then the "Resources" folder.
+
+Any images should that you would like to use in the board should also be placed in the Resources directory.
+
+If any files are editted, you must restart the program for changes to take effect.
+
+Controls:
+
+Escape to exit program.
+Press 'r' to reset the board.
+
+Data File Commands:
+
+All lines take the form:
+{name}:{value}
+The name of the variable on the left of the colon, with no spaces or other punctuation, and the value to be assigned to that variable on the right of the colon, again with no spaces or other punctuation.
+
+The type of value that will be assigned to the variable is shown inside curled-braces. 
+
+To create a line break in the text of a question or answer, use a vertical line character (|)
+
+If a # is shown in a variable name, it must be replaced with the number for that variable, for example:
+
+column#.square#.question.image#.xpos:{number}
+might be written as:
+column1.square5.question.image2.xpos:50
+to represent the second image in the question for square 5 in column one, whose x-position is halfway across the screen.
+
+A brief definition of each line will be given.
+
+---------------------------------------------------
+
+//The .fontsize lines are required for proper function of the program. 
+//The number supplied represents the size of the font. 40 was used during testing.
+//
+//title is the text at the top of the board screen.
+//topic is the text at the top of each column on the board screen.
+//square is the text for the squares on the board screen.
+//slidemove is the text shown in the bottom-left and bottom-right of the question and answer screens.
+//question is the text for both the question and answer screens.
+//finalquestion is the text in the box at the top-right corner of the board screen.
+
+title.fontsize:{number}
+topic.fontsize:{number}
+square.fontsize:{number}
+slidemove.fontsize:{number}
+question.fontsize:{number}
+finalquestion.fontsize:{number}
+
+//board.Title is required.
+//
+//board.Title is the text that is displayed at the top-left corner of the board screen.
+
+board.Title:{text}
+
+//column1.topic through column5.topic are required.
+//
+//column#.topic is the text displayed at the top of the indicated column.
+
+column#.topic:{text}
+
+//column#.square# uses column1 through column5 and square1 through square5. 
+//All 25 .value variables arew required.
+//
+//column#.square#.value is the text displayed inside the indicated square of the indicated column.
+
+column#.square#.value:{text}
+
+//All 25 .question variables are required.
+//.xpos, .ypos, and .width are not required, but may be used for further customization
+//
+//column#.square#.question is the text that will be shown on the question screen of the corresponding square.
+//
+//column#.square#.question.xpos and column#.square#.question.ypos indicate the center position of the text 
+//as a percentage of the screen. For example .xpos:50 and .ypos:50 would indicate the text is centered on the
+//screen.
+//
+//column#.square#.question.width is the maximum width a single line of text may be, as a percentage of the screen.
+
+column#.square#.question:{text}
+column#.square#.question.xpos:{number}
+column#.square#.question.ypos:{number}
+column#.square#.question.width:{number}
+
+//.image# and its sub-variables are not required.
+//Multiple images may be included in a given question by increasing the # in image# incrementally.
+//If a given .image# is included, all its sub-variables must also be included.
+//
+//The value for column#.square#.question.image# must match the filename of the desired image exactly, including
+//its extension. For example: dodecagon.png
+//The indicated image must be in the Resources directory, otherwise it will not function.
+//
+//column#.square#.question.image#.xpos and column#.square#.question.image#.ypos indicate the center position of 
+//the image as a percentage of the screen. For example .xpos:50 and .ypos:50 would indicate the image is centered 
+//on the screen.
+//
+//column#.square#.question.image#.size is the size of the image as a percentage of the screen.
+
+column#.square#.question.image#:{filename}
+column#.square#.question.image#.xpos:{number}
+column#.square#.question.image#.ypos:{number}
+column#.square#.question.image#.size:{number}
+
+//All 25 .answer variables are required.
+//.xpos, .ypos, and .width are not required, but may be used for further customization
+//
+//column#.square#.answer is the text that will be shown on the answer screen of the corresponding square.
+//
+//column#.square#.answer.xpos and column#.square#.answer.ypos indicate the center position of the text 
+//as a percentage of the screen. For example .xpos:50 and .ypos:50 would indicate the text is centered on the
+//screen.
+//
+//column#.square#.answer.width is the maximum width a single line of text may be, as a percentage of the screen.
+
+column#.square#.answer:{text}
+column#.square#.answer.xpos:{number}
+column#.square#.answer.ypos:{number}
+column#.square#.answer.width:{number}
+
+//.image# and its sub-variables are not required.
+//Multiple images may be included in a given answer by increasing the # in image# incrementally.
+//If a given .image# is included, all its sub-variables must also be included.
+//
+//The value for column#.square#.answer.image# must match the filename of the desired image exactly, including
+//its extension. For example: dodecagon.png
+//The indicated image must be in the Resources directory, otherwise it will not function.
+//
+//column#.square#.answer.image#.xpos and column#.square#.answer.image#.ypos indicate the center position of 
+//the image as a percentage of the screen. For example .xpos:50 and .ypos:50 would indicate the image is centered 
+//on the screen.
+//
+//column#.square#.answer.image#.size is the size of the image as a percentage of the screen.
+
+column#.square#.answer.image#:{filename}
+column#.square#.answer.image#.xpos:{number}
+column#.square#.answer.image#.ypos:{number}
+column#.square#.answer.image#.size:{number}
+
+//All variables applicable to column#.square# are applicable to allin.
+//The only difference is the use of .label rather than .value
+allin.label:{text}
+allin.question:{text}
+allin.answer:{text}
