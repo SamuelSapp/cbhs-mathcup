@@ -104,33 +104,91 @@ column1.square4.answer.image1.size:50
 
 ----------
 column1.square5.value:500
-
+-
+column1.square5.special:ALL IN
+-
 column1.square5.question:Quadrilateral ABCD is inscribed circle Z such that ∠BCA = 52°, measure of arc CB = 94°, AB ∥ CD.  Find m∠ZAC. 
-
-column1.square5.answer:Probably 85
+column1.square5.question.xpos:50
+column1.square5.question.ypos:33
+column1.square5.question.width:60
+-
+column1.square5.question.image1:c1q5.png
+column1.square5.question.image1.xpos:50
+column1.square5.question.image1.ypos:65
+column1.square5.question.image1.size:70
+-
+column1.square5.answer:Quadrilateral ABCD is inscribed circle Z such that ∠BCA = 52°, measure of arc CB = 94°, AB ∥ CD.  Find m∠ZAC.||9°
+column1.square5.answer.xpos:50
+column1.square5.answer.ypos:33
+column1.square5.answer.width:60
+-
+column1.square5.answer.image1:c1q5.png
+column1.square5.answer.image1.xpos:50
+column1.square5.answer.image1.ypos:65
+column1.square5.answer.image1.size:70
 
 ----------------------------------------
 column2.topic:The X Factor
 
 ----------
 column2.square1.value:100
-column2.square1.question:In order, list the powers of 2.
-column2.square1.answer:I bet you weren't X-pecting that.
+column2.square1.question: 
 
+-
+column2.square1.question.image1:c2q1.png
+column2.square1.question.image1.xpos:50
+column2.square1.question.image1.ypos:65
+column2.square1.question.image1.size:100
+-
+column2.square1.answer.image1:c2q1.png
+column2.square1.answer.image1.xpos:50
+column2.square1.answer.image1.ypos:65
+column2.square1.answer.image1.size:100
+-
+column2.square1.answer:-2018
+column2.square1.answer.xpos:50
+column2.square1.answer.ypos:50
+column2.square1.answer.width:60
 ----------
 column2.square2.value:200
-column2.square2.question:If x> 0 and x(x-1) = 6, what is the value of (x+1)(x+2)?
-column2.square2.answer:3 times 4
-
+column2.square2.question:The number 4,938,271,603,950,617,283 will be a perfect square if one of its digits is increased by 1 (and if all the other digits are left unchanged). What is the value of this digit before the increase?
+column2.square2.answer:The number 4,938,271,603,950,617,283 will be a perfect square if one of its digits is increased by 1 (and if all the other digits are left unchanged). What is the value of this digit before the increase?||3
 ----------
 column2.square3.value:300
-column2.square3.question:If x^2 + 2x = 63, what is the value of x^2 + 2x + 8?
-column2.square3.answer:8 more than 63, so, like, 71
-
+column2.square3.question: 
+-
+column2.square3.question.image1:c2q3.png
+column2.square3.question.image1.xpos:50
+column2.square3.question.image1.ypos:62
+column2.square3.question.image1.size:100
+-
+column2.square3.answer.image1:c2q3.png
+column2.square3.answer.image1.xpos:50
+column2.square3.answer.image1.ypos:62
+column2.square3.answer.image1.size:100
+-
+column2.square3.answer:4
+column2.square3.answer.xpos:50
+column2.square3.answer.ypos:30
+column2.square3.answer.width:60
 ----------
 column2.square4.value:400
-column2.square4.question:What are both ordered pairs of positive integers (x, y) which satisfy 3x + 4y = 25?
-column2.square4.answer:y = (25-3x)/4
+column2.square4.question: 
+-
+column2.square4.question.image1:c2q4.png
+column2.square4.question.image1.xpos:50
+column2.square4.question.image1.ypos:62
+column2.square4.question.image1.size:100
+-
+column2.square4.answer.image1:c2q4.png
+column2.square4.answer.image1.xpos:50
+column2.square4.answer.image1.ypos:62
+column2.square4.answer.image1.size:100
+-
+column2.square4.answer:1
+column2.square4.answer.xpos:50
+column2.square4.answer.ypos:45
+column2.square4.answer.width:60
 
 ----------
 column2.square5.value:500
@@ -153,7 +211,7 @@ column3.square2.answer:I'm
 ----------
 column3.square3.value:300
 column3.square3.question:If there are 5 teams in each division and each team plays 19 times against one another, how many total games will be played within the division?
-column3.square3.answer:Not
+column3.square3.answer:If there are 5 teams in each division and each team plays 19 times against one another, how many total games will be played within the division?||190
 
 ----------
 column3.square4.value:400
@@ -170,56 +228,57 @@ column4.topic:Say What?
 
 ----------
 column4.square1.value:100
-column4.square1.question:I have no length, width, or height and am a dimension unto myself, what/who am I?
-column4.square1.answer:Get the point?
+column4.square1.question:Two fathers and two sons sat down to eat eggs for breakfast. They ate exactly three eggs, each person had an egg. How is this possible?
+column4.square1.answer:Two fathers and two sons sat down to eat eggs for breakfast. They ate exactly three eggs, each person had an egg. How is this possible?||One of the 'fathers' is also a grandfather. Therefore the other father is both a son and a father to the grandson.
 
 ----------
 column4.square2.value:200
-column4.square2.question:Lucy Lollipop was looking through the family photograph albumn, which has a photo of each of her parents, each of her grandparents, all the way up to each of her great-great-great grandparents.  How many photos are in the album?
-column4.square2.answer:2^5
+column4.square2.question:How many 9s are there between 1 and a 100?
+column4.square2.answer:How many 9s are there between 1 and a 100?||19
 
 ----------
 column4.square3.value:300
-column4.square3.question:Using only addition, how do you add eight 8's and get the number 1000?
-column4.square3.answer:Wait, what?
+column4.square3.question:What is the smallest number of children in a family if each child has at least one brother and one sister?
+column4.square3.answer:What is the smallest number of children in a family if each child has at least one brother and one sister?||4, two boys and two girls.
 
 ----------
 column4.square4.value:400
-column4.square4.question:I am a circle with an infinite radius, but when you see me, what do I look like?
-column4.square4.answer:A plane?
+column4.square4.question:If a brick weighs ¾ of a kilogram and ¾ of a brick, how much does one brick weigh?
+column4.square4.answer:If a brick weighs ¾ of a kilogram and ¾ of a brick, how much does one brick weigh?||3 kilograms
 
 ----------
 column4.square5.value:500
-column4.square5.question:Triangle ABC is drawn on a Cartesian plane (an x, y grid) such that vertex B has the greatest y value of the three vertices, and vertex C has the least y value. If I reflect the triangle of the y axis, then reflect it over the x axis, and finaly rotate the triangle 180 degrees, which vertex will have the greatest y value?
-column4.square5.answer:Still B - could include images of the transformations
+column4.square5.question:If a hen and a half lays an egg and a half in a day and a half, how long does it take one hen to lay a dozen eggs?
+column4.square5.answer:If a hen and a half lays an egg and a half in a day and a half, how long does it take one hen to lay a dozen eggs?||18 days.
 
 ----------------------------------------
 column5.topic:8 Days a Week
 
 ----------
 column5.square1.value:100
-column5.square1.question:
-column5.square1.answer:
+column5.square1.question:This century has already has several years that only have even digits: 2000, 2002, 2004...What was the most recent such year before to 2000? 
+column5.square1.answer:This century has already has several years that only have even digits: 2000, 2002, 2004...What was the most recent such year before to 2000? ||888 CE
 
 ----------
 column5.square2.value:200
-column5.square2.question:What ancient civilization base 60 number system is repsonsible for why we have 60 seconds in a minute and 60 minutes in a minute? ||a)  Egyptians |b)  Greeks |c)  Chinese |d)  Babylonians |e)  Indians
-column5.square2.answer:Don't know, but I need to adapt for this format of question.
+column5.square2.question:Valentines Day, February 14th, was on a Wednesday this year (2018). What is the next year that it will be on a Wednesday again?
+column5.square2.answer:Valentines Day, February 14th, was on a Wednesday this year (2018). What is the next year that it will be on a Wednesday again?||2024
 
 ----------
 column5.square3.value:300
+column5.square3.special:ROUND ROBIN
 column5.square3.question:Who invented trigonometry? ||a)  Indians |b) Greeks |c)  Chinese |d)  Egyptians |e)  Babylonians
 column5.square3.answer:Still, though
 
 ----------
 column5.square4.value:400
-column5.square4.question:
-column5.square4.answer:
+column5.square4.question:At most, how many Saturdays can there be in one calendar year?
+column5.square4.answer:At most, how many Saturdays can there be in one calendar year?||53
 
 ----------
 column5.square5.value:500
-column5.square5.question:
-column5.square5.answer:
+column5.square5.question:The vernal equinox was last week on March 20, and the autumnal equinox will be on September 22 this year. To the nearest whole percent, what percentage of the year will be included from this year’s vernal to autumnal equinoxes?
+column5.square5.answer:The vernal equinox was last week on March 20, and the autumnal equinox will be on September 22 this year. To the nearest whole percent, what percentage of the year will be included from this year’s vernal to autumnal equinoxes?||51%
 
 ----------------------------------------
 allin.label:Final All In!

@@ -13,6 +13,7 @@ require "class/Board"
 require "class/Column"
 require "class/Square"
 require "class/ExitDialogue"
+require "class/SpecialDialogue"
 
 debug = true
 

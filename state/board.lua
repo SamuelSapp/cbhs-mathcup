@@ -8,6 +8,7 @@ function board:init()
   titleY = love.graphics.getHeight()/8
   mousePoint = HC.point(love.mouse.getX(),love.mouse.getY())
   exitBox = ExitDialogue()
+  specialBox = nil
 end
 
 function board:enter()
@@ -19,6 +20,9 @@ function board:draw()
   love.graphics.setFont(titleFont)
   love.graphics.setColor(yellow)
   love.graphics.print(data["board.Title"], titleX, titleY)
+  if specialBox ~= nil then
+    specialBox:draw()
+  end
   if isExiting then
     exitBox:draw()
   end
@@ -33,17 +37,23 @@ function board:update()
   local highlight = false
   
   if isExiting == false then
-    for index1, tempColumn in pairs(activeBoard.columns) do
-      for index2, tempSquare in pairs(tempColumn.squares) do
-        test = mousePoint:collidesWith(tempSquare.body)
-        if test and tempSquare.isQuestion and tempSquare.wasClicked == false then
-          highlight = true
+    if specialBox == nil then
+      for index1, tempColumn in pairs(activeBoard.columns) do
+        for index2, tempSquare in pairs(tempColumn.squares) do
+          test = mousePoint:collidesWith(tempSquare.body)
+          if test and tempSquare.isQuestion and tempSquare.wasClicked == false then
+            highlight = true
+          end
         end
       end
-    end
-    test = mousePoint:collidesWith(activeBoard.finalQuestion.body)
-    if test then
-      highlight = true
+      test = mousePoint:collidesWith(activeBoard.finalQuestion.body)
+      if test then
+        highlight = true
+      end
+    else
+      if mousePoint:collidesWith(specialBox.yes) or mousePoint:collidesWith(specialBox.no) then
+        highlight = true
+      end
     end
   else
     if mousePoint:collidesWith(exitBox.yes) or mousePoint:collidesWith(exitBox.no) then
@@ -60,22 +70,38 @@ end
 
 function board:mousepressed(x, y, button, isTouch)
   if isExiting == false then
-    if button == 1 then
-      for index1, tempColumn in pairs(activeBoard.columns) do
-        for index2, tempSquare in pairs(tempColumn.squares) do
-          test = mousePoint:collidesWith(tempSquare.body)
-          if test and tempSquare.isQuestion and tempSquare.wasClicked == false then
-            activeSquare = tempSquare
-            activeSquare.wasClicked = true
-            Gamestate.switch(question, activeSquare)
+    if specialBox == nil then
+      if button == 1 then
+        for index1, tempColumn in pairs(activeBoard.columns) do
+          for index2, tempSquare in pairs(tempColumn.squares) do
+            test = mousePoint:collidesWith(tempSquare.body)
+            if test and tempSquare.isQuestion and tempSquare.wasClicked == false then
+              activeSquare = tempSquare
+              if data[activeSquare.squareKey .. ".special"] ~= nil then
+                specialBox = SpecialDialogue(data[activeSquare.squareKey .. ".special"])
+              else
+                activeSquare.wasClicked = true
+                Gamestate.switch(question, activeSquare)
+              end
+            end
           end
         end
+        
+        test = mousePoint:collidesWith(activeBoard.finalQuestion.body)
+        if test then
+          activeSquare = activeBoard.finalQuestion
+          Gamestate.switch(question, activeSquare)
+        end
       end
-      
-      test = mousePoint:collidesWith(activeBoard.finalQuestion.body)
-      if test then
-        activeSquare = activeBoard.finalQuestion
-        Gamestate.switch(question, activeSquare)
+    else
+      if button == 1 then
+        if mousePoint:collidesWith(specialBox.yes) then
+          activeSquare.wasClicked = true
+          specialBox = nil
+          Gamestate.switch(question, activeSquare)
+        elseif mousePoint:collidesWith(specialBox.no) then
+          specialBox = nil
+        end
       end
     end
   else
