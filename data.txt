@@ -15,30 +15,30 @@ column1.square1.value:100
 -
 column1.square1.question:What is the exact circumference?
 column1.square1.question.xpos:50
-column1.square1.question.ypos:25
+column1.square1.question.ypos:35
 column1.square1.question.width:35
 -
 column1.square1.question.image1:c1q1.png
 column1.square1.question.image1.xpos:50
-column1.square1.question.image1.ypos:60
-column1.square1.question.image1.size:100
+column1.square1.question.image1.ypos:65
+column1.square1.question.image1.size:90
 -
-column1.square1.answer:What is the exact circumference?|8π
+column1.square1.answer:What is the exact circumference?||8π
 column1.square1.answer.xpos:50
-column1.square1.answer.ypos:25
+column1.square1.answer.ypos:35
 column1.square1.answer.width:35
 -
 column1.square1.answer.image1:c1q1.png
 column1.square1.answer.image1.xpos:50
-column1.square1.answer.image1.ypos:60
-column1.square1.answer.image1.size:100
+column1.square1.answer.image1.ypos:65
+column1.square1.answer.image1.size:90
 
 ----------
 column1.square2.value:200
 -
 column1.square2.question:In the figure, the radius of circle A is twice the radius of circle B and 4 times the radius of circle C.  If the sum of the circumferences of the three circles is 42π, find AC.
 column1.square2.question.xpos:50
-column1.square2.question.ypos:35
+column1.square2.question.ypos:38
 column1.square2.question.width:60
 -
 column1.square2.question.image1:c1q2.png
@@ -46,9 +46,9 @@ column1.square2.question.image1.xpos:50
 column1.square2.question.image1.ypos:70
 column1.square2.question.image1.size:50
 -
-column1.square2.answer:In the figure, the radius of circle A is twice the radius of circle B and 4 times the radius of circle C.  If the sum of the circumferences of the three circles is 42π, find AC.|27
+column1.square2.answer:In the figure, the radius of circle A is twice the radius of circle B and 4 times the radius of circle C.  If the sum of the circumferences of the three circles is 42π, find AC.||27
 column1.square2.answer.xpos:50
-column1.square2.answer.ypos:35
+column1.square2.answer.ypos:38
 column1.square2.answer.width:60
 -
 column1.square2.answer.image1:c1q2.png
@@ -69,7 +69,7 @@ column1.square3.question.image1.xpos:50
 column1.square3.question.image1.ypos:60
 column1.square3.question.image1.size:80
 -
-column1.square3.answer:Find the exact value of PA if the circumference of circle O is 324π.|81√3
+column1.square3.answer:Find the exact value of PA if the circumference of circle O is 324π.||81√3
 column1.square3.answer.xpos:50
 column1.square3.answer.ypos:30
 column1.square3.answer.width:50
@@ -92,7 +92,7 @@ column1.square4.question.image1.xpos:50
 column1.square4.question.image1.ypos:60
 column1.square4.question.image1.size:50
 -
-column1.square4.answer:Find the exact perimeter of ΔABC if DB = 7.5 and Z bisects CG.|15√3
+column1.square4.answer:Find the exact perimeter of ΔABC if DB = 7.5 and Z bisects CG.||15√3
 column1.square4.answer.xpos:50
 column1.square4.answer.ypos:30
 column1.square4.answer.width:50
@@ -160,12 +160,12 @@ column2.square3.question:
 column2.square3.question.image1:c2q3.png
 column2.square3.question.image1.xpos:50
 column2.square3.question.image1.ypos:62
-column2.square3.question.image1.size:100
+column2.square3.question.image1.size:90
 -
 column2.square3.answer.image1:c2q3.png
 column2.square3.answer.image1.xpos:50
 column2.square3.answer.image1.ypos:62
-column2.square3.answer.image1.size:100
+column2.square3.answer.image1.size:90
 -
 column2.square3.answer:4
 column2.square3.answer.xpos:50
@@ -192,21 +192,47 @@ column2.square4.answer.width:60
 
 ----------
 column2.square5.value:500
-column2.square5.question:What are all values of x for which x square root 2 equals 2 square root x
-column2.square5.answer:Honestly, don't know.
-
+column2.square5.special:ROUND ROBIN
+column2.square5.question:In order, list the powers of 2
+column2.square5.answer: 
+-
+column2.square5.answer.image1:c2q5.png
+column2.square5.answer.image1.xpos:50
+column2.square5.answer.image1.ypos:62
+column2.square5.answer.image1.size:100
 ----------------------------------------
 column3.topic:Play Ball
 
 ----------
 column3.square1.value:100
-column3.square1.question:In last year’s world series game 2, the Astro’s took the lead in the 10th inning with back-to-back homers by Jose Altuve and Carlos Correa.  If Altuve hit 24 home runs in 590 at bats and Correa 24 home runs in 422 at bats, what is the probability of them hitting back-to-back home runs?  Round your final answer to the nearest ten-thousandth.
-column3.square1.answer:Sorry
-
+column3.square1.question: 
+-
+column3.square1.question.image1:c3q1.png
+column3.square1.question.image1.xpos:50
+column3.square1.question.image1.ypos:62
+column3.square1.question.image1.size:70
+-
+column3.square1.answer.image1:c3q1.png
+column3.square1.answer.image1.xpos:50
+column3.square1.answer.image1.ypos:62
+column3.square1.answer.image1.size:70
+-
+column3.square1.answer:||||||.0023 or 0.23%
 ----------
 column3.square2.value:200
-column3.square2.question:Below is a breakdown of the 216 non-U.S. major league baseball players by nationality (21 countries) and the population of each country.  Which country has the largest number of players per capita?
-column3.square2.answer:I'm
+column3.square2.question: 
+-
+column3.square2.question.image1:c3q2.png
+column3.square2.question.image1.xpos:50
+column3.square2.question.image1.ypos:58
+column3.square2.question.image1.size:75
+-
+column3.square2.answer.image1:c3q2.png
+column3.square2.answer.image1.xpos:50
+column3.square2.answer.image1.ypos:58
+column3.square2.answer.image1.size:75
+-
+column3.square2.answer:|||||||Curacao: 1 per 32,000.
 
 ----------
 column3.square3.value:300
@@ -215,13 +241,50 @@ column3.square3.answer:If there are 5 teams in each division and each team plays
 
 ----------
 column3.square4.value:400
-column3.square4.question:Since Major League Baseball expanded the playoff format in 1995 to include 4 teams (not counting the wildcard play in game) the Boston Red Sox have made the playoffs 12 times and the New York Yankees 18 times.  During that time, both teams have made the playoffs 9 times.  What is the probability that either the Red Sox or Yankees have made the playoffs?
-column3.square4.answer:Reading
+column3.square4.question: 
+-
+column3.square4.question.image1:c3q4.png
+column3.square4.question.image1.xpos:50
+column3.square4.question.image1.ypos:63
+column3.square4.question.image1.size:75
+-
+column3.square4.answer.image1:c3q4.png
+column3.square4.answer.image1.xpos:50
+column3.square4.answer.image1.ypos:63
+column3.square4.answer.image1.size:75
+-
+column3.square4.answer:||||.9130 or 91.3%.  The Red Sox or Yankees have appeared in 21 of the last 23 seasons with 2014 and 2015 being the only two years both teams did not make it.
 
 ----------
 column3.square5.value:500
-column3.square5.question:If two real numbers are randomly selected from all the real numbers from 0 to 2, what is the probability that the sum of the numbers is less than 4?
-column3.square5.answer:These
+column3.square5.special:READ SPECIAL INSTRUCTIONS
+column3.square5.question: 
+column3.square5.answer: 
+-
+column3.square5.question.image1:c3q5.png
+column3.square5.question.image1.xpos:50
+column3.square5.question.image1.ypos:67
+column3.square5.question.image1.size:85
+-
+column3.square5.question.image2:c3q5-2.png
+column3.square5.question.image2.xpos:50
+column3.square5.question.image2.ypos:38
+column3.square5.question.image2.size:60
+-
+column3.square5.answer.image1:c3q5.png
+column3.square5.answer.image1.xpos:50
+column3.square5.answer.image1.ypos:67
+column3.square5.answer.image1.size:85
+-
+column3.square5.answer.image2:c3q5-2.png
+column3.square5.answer.image2.xpos:50
+column3.square5.answer.image2.ypos:38
+column3.square5.answer.image2.size:60
+-
+column3.square5.answer.image3:c3q5-3.png
+column3.square5.answer.image3.xpos:50
+column3.square5.answer.image3.ypos:24
+column3.square5.answer.image3.size:75
 
 ----------------------------------------
 column4.topic:Say What?
@@ -267,8 +330,13 @@ column5.square2.answer:Valentines Day, February 14th, was on a Wednesday this ye
 ----------
 column5.square3.value:300
 column5.square3.special:ROUND ROBIN
-column5.square3.question:Who invented trigonometry? ||a)  Indians |b) Greeks |c)  Chinese |d)  Egyptians |e)  Babylonians
-column5.square3.answer:Still, though
+column5.square3.question:In order, list the perfect squares
+column5.square3.answer: 
+-
+column5.square3.answer.image1:c5q3.png
+column5.square3.answer.image1.xpos:50
+column5.square3.answer.image1.ypos:45
+column5.square3.answer.image1.size:125
 
 ----------
 column5.square4.value:400

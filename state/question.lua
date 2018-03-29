@@ -11,8 +11,6 @@ end
 function question:enter(previous, activeSquare)
   sWidth = love.graphics.getWidth()
   sHeight = love.graphics.getHeight()
-  titleX = sWidth/8
-  titleY = sHeight/8
   box1x = sHeight/16
   box2x = sWidth - sHeight/16 - sWidth/5
   boxy = sHeight*13/16

@@ -71,7 +71,7 @@ Square = Class{
       if debug then
         image.picture = love.graphics.newImage(data[imageKey])
       else
-        image.picture = love.graphics.newImage("mathcup/" .. data[imageKey])
+        image.picture = love.graphics.newImage("cbhs-mathcup/" .. data[imageKey])
       end
     
       local iWidth = image.picture:getWidth()

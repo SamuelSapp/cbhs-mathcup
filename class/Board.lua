@@ -6,7 +6,6 @@ Board = Class{
       table.insert(self.columns, i, Column(i))
     end
     self:errorCheck()
-    self.finalQuestion = Square(((love.graphics.getWidth()/20)*13), (love.graphics.getHeight()/20)*2, (love.graphics.getWidth()/20)*5, (love.graphics.getHeight()/10),"allin", data["allin.label"], self:getData("allin.question"), self:getData("allin.answer"), "")
   end;
   
   update = function(self, dt)
@@ -17,7 +16,6 @@ Board = Class{
     for index, currentColumn in pairs(self.columns) do
       currentColumn:draw()
     end
-    self.finalQuestion:draw()
   end;
   
   errorCheck = function(self)

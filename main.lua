@@ -15,7 +15,7 @@ require "class/Square"
 require "class/ExitDialogue"
 require "class/SpecialDialogue"
 
-debug = true
+debug = false
 
 data = {}
 

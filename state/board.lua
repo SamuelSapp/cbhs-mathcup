@@ -4,11 +4,12 @@ function board:init()
   activeBoard = Board()
   cursor = love.mouse.getSystemCursor("hand")
   love.graphics.setBackgroundColor(4,55,99,255)
-  titleX = love.graphics.getWidth()/8
-  titleY = love.graphics.getHeight()/8
+  titleX = SW/2
+  titleY = SH/8
   mousePoint = HC.point(love.mouse.getX(),love.mouse.getY())
   exitBox = ExitDialogue()
   specialBox = nil
+  ringsImage = love.graphics.newImage("rings.png")
 end
 
 function board:enter()
@@ -16,10 +17,12 @@ function board:enter()
 end
 
 function board:draw()
+  love.graphics.setColor(255,255,255,255)
+  love.graphics.draw(ringsImage, SW*.035, SH*.26, 0, SW/1920*.16, SH/1080*.16)
   activeBoard:draw()
   love.graphics.setFont(titleFont)
   love.graphics.setColor(yellow)
-  love.graphics.print(data["board.Title"], titleX, titleY)
+  love.graphics.print(data["board.Title"], titleX, titleY, 0, 1, 1, titleFont:getWidth(data["board.Title"])/2, titleFont:getHeight()/2)
   if specialBox ~= nil then
     specialBox:draw()
   end
@@ -45,10 +48,6 @@ function board:update()
             highlight = true
           end
         end
-      end
-      test = mousePoint:collidesWith(activeBoard.finalQuestion.body)
-      if test then
-        highlight = true
       end
     else
       if mousePoint:collidesWith(specialBox.yes) or mousePoint:collidesWith(specialBox.no) then
@@ -85,12 +84,6 @@ function board:mousepressed(x, y, button, isTouch)
               end
             end
           end
-        end
-        
-        test = mousePoint:collidesWith(activeBoard.finalQuestion.body)
-        if test then
-          activeSquare = activeBoard.finalQuestion
-          Gamestate.switch(question, activeSquare)
         end
       end
     else

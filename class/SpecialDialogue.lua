@@ -3,8 +3,8 @@ SpecialDialogue = Class{
     self.width = (love.graphics.getWidth())/5
     self.height = (love.graphics.getHeight())/8
     self.text = text
-    self.yes = HC.rectangle(self.width*4/3, self.height*5/2, self.width, self.height)
-    self.no = HC.rectangle(self.width*8/3, self.height*5/2, self.width, self.height)
+    self.no = HC.rectangle(self.width*4/3, self.height*5/2, self.width, self.height)
+    self.yes = HC.rectangle(self.width*8/3, self.height*5/2, self.width, self.height)
   end;
   
   draw = function(self)
@@ -20,7 +20,7 @@ SpecialDialogue = Class{
     love.graphics.setFont(slideTopFont)
     love.graphics.printf(self.text, self.width, self.height*6/5, self.width*3, "center")
     love.graphics.setColor(255,255,0,255)
-    love.graphics.printf("Continue", self.width*4/3, self.height*6/2, self.width, "center", 0, 1, 1, 0, love.graphics.getFont():getHeight()/2)
-    love.graphics.printf("Go back", self.width*8/3, self.height*6/2, self.width, "center", 0, 1, 1, 0, love.graphics.getFont():getHeight()/2)
+    love.graphics.printf("Go back", self.width*4/3, self.height*6/2, self.width, "center", 0, 1, 1, 0, love.graphics.getFont():getHeight()/2)
+    love.graphics.printf("Continue", self.width*8/3, self.height*6/2, self.width, "center", 0, 1, 1, 0, love.graphics.getFont():getHeight()/2)
   end
 }
